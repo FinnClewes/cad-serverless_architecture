@@ -5,24 +5,27 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "schema": "typescript-json-schema --noExtraProps --required --refs false -o ./shared/types.schema.json ./shared/types.d.ts MovieCast"
   },
   "devDependencies": {
     "@swc/core": "^1.15.0",
     "@swc/jest": "^0.2.39",
     "@types/aws-lambda": "^8.10.164",
     "@types/jest": "^30",
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.19.2",
     "@types/source-map-support": "^0.5.10",
     "aws-cdk": "2.1141.0",
-    "jest": "^30",
+    "jest": "^25.0.0",
     "source-map-support": "^0.5.21",
     "tsx": "^4.23.0",
-    "typescript": "~7.0.2"
+    "typescript": "~7.0.2",
+    "typescript-json-schema": "^0.68.0"
   },
   "dependencies": {
     "@aws-sdk/lib-dynamodb": "^3.1152.0",
     "@aws-sdk/util-dynamodb": "^3.996.9",
+    "ajv": "^8.20.0",
     "aws-cdk-lib": "^2.268.0",
     "constructs": "^10.5.0"
   }

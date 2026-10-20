@@ -9,3 +9,6 @@ cdk.out
 
 # AWS 
 response.json
+
+# schema generation
+*.schema.json

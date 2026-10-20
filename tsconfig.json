@@ -29,10 +29,17 @@
     "types": [
       "jest",
       "node"
-    ]
+    ],
+    "resolveJsonModule": true,
   },
   "exclude": [
     "node_modules",
     "cdk.out"
-  ]
+  ],
+  "include": [
+    "bin/**/*",
+    "lib/**/*",
+    "lambdas/**/*",
+    "shared/**/*"
+ ],
 }
